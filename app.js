@@ -5,7 +5,7 @@ const express = require('express')
 const app = express();
 
 app.get('/contact.html', (req,res) => {
-    res.send('cosik')
+    res.send(req.body.name + 'cosik')
 })
 
 const server = http.createServer((req,res) => {
